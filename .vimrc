@@ -16,6 +16,9 @@ Bundle 'majutsushi/tagbar'
 Bundle 'wookiehangover/jshint.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'lunaru/vim-twig'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'kien/ctrlp.vim'
 filetype plugin indent on
 " Brief help
 " :BundleList          - list configured bundles
