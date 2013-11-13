@@ -3,10 +3,9 @@ set t_Co=256
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 filetype off                  " required!
-
+call system("mkdir -p $HOME/.vim/{plugin,undo}")
 let iCanHazVundle=1
-let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
-if !filereadable(vundle_readme)
+if !filereadable($HOME . '/.vim/bundle/vundle/README.md')
     echo "Installing Vundle.."
     echo ""
     silent !mkdir -p ~/.vim/bundle
