@@ -35,6 +35,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'Raimondi/delimitMate'
 Bundle 'elzr/vim-json'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'bling/vim-airline'
 
 if iCanHazVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
