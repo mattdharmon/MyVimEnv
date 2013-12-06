@@ -71,6 +71,5 @@ set wildignore+=*/cache/*,*/node_modules/*,*/vendor/*
 map <f3> :!php -l %
 map <f2> <ESC>:%s/\r//g<RETURN>
 map <F8> :TagbarToggle<CR>
-execute pathogen#infect()
 let g:ctrlp_working_path_mode = 'r'
 autocmd VimEnter * NERDTree
