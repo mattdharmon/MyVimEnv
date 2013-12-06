@@ -29,6 +29,12 @@ Bundle 'lunaru/vim-twig'
 Bundle 'L9'
 Bundle 'FuzzyFinder'
 Bundle 'kien/ctrlp.vim'
+Bundle 'jelera/vim-javascript-syntax'
+Bundle 'pangloss/vim-javascript'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'Raimondi/delimitMate'
+Bundle 'elzr/vim-json'
+Bundle 'digitaltoad/vim-jade'
 
 if iCanHazVundle == 0
     echo "Installing Bundles, please ignore key map error messages"
@@ -50,6 +56,8 @@ syntax on
 set background=dark                                                             
 let g:solarized_termtrans = 1                                                   
 let g:solarized_termcolors=256
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_auto_colors=0
 colorscheme solarized
 set number
 set bs=2
