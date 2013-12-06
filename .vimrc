@@ -17,7 +17,7 @@ call vundle#rc()
 set rtp+=/home/dev/.vim/bundle/vundle/
 call vundle#rc()
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'tpope/vim-fugitive'
@@ -53,9 +53,9 @@ filetype plugin indent on
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle commands are not allowed.
 behave mswin
-syntax on                                                                       
-set background=dark                                                             
-let g:solarized_termtrans = 1                                                   
+syntax on
+set background=dark
+let g:solarized_termtrans = 1
 let g:solarized_termcolors=256
 let g:indent_guides_enable_on_vim_startup=1
 let g:indent_guides_auto_colors=0
@@ -82,3 +82,5 @@ map <f2> <ESC>:%s/\r//g<RETURN>
 map <F8> :TagbarToggle<CR>
 let g:ctrlp_working_path_mode = 'r'
 autocmd VimEnter * NERDTree
+"remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e"
